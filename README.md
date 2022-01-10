@@ -40,6 +40,7 @@ Como temos essas 3 entradas cadastradas em nosso arquivo, teremos como saída o 
  
 ![1](https://user-images.githubusercontent.com/78819692/148830027-5b6faf0f-1ebd-46b8-b0ca-189d82577ff6.png)
  
+> :exclamation: Caso for do interesse pesquisar outros valores de CPF, basta modificar o vetor que contem esses valores.
  
 
  
