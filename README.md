@@ -38,8 +38,8 @@
 ```
 Como temos essas 3 entradas cadastradas em nosso arquivo, teremos como saída o retorno desses dados com o CPF, nome e idade: 
  
-![1](https://user-images.githubusercontent.com/78819692/148830027-5b6faf0f-1ebd-46b8-b0ca-189d82577ff6.png)
- 
+ ![saida 1](https://user-images.githubusercontent.com/78819692/148832592-4d3013ff-e6da-4dcf-b26d-88132732fc29.png)
+
 > :exclamation: Caso for do interesse pesquisar outros valores de CPF, basta modificar o vetor que contem esses valores.
  
 :point_right: Opção 2:
