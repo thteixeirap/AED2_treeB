@@ -106,3 +106,31 @@ Como temos essas 3 entradas cadastradas em nosso arquivo, teremos como saída o 
   }
   }
 ```
+   
+:point_right: Opção 3:
+   
+<p Na opção de Inserir, temos ja o seguinte dado pré-setado a ser inserido> <p>
+ 
+ ```sh
+  12531656880,Thomas,23
+  ```
+ - A chamada InserirCPF ocorre em 2 etapas. Primerio chamamos o Pesquisar para ver se o CPF a ser inserido já esta registrado, sendo isso falso, então iniciamos o processo de inserção desse CPF.
+ 
+ - A função Insere foi programada para funcionar a partir de todos os registros de todas as páginas já estarem no seu limite (10 dados). Sendo assim, sempre que vamos inserir um novo dado um novo arquivo txt é criado com o sentinela (nome do arquivo) o cpf desse novo dado, e seu valor é inserido na árvore.
+ 
+ - O problema encontrado foi caso esse novo CPF estiver entre um range de um determinado arquivo, ao inserir esse valor na árvore, teremos problemas para achar valores acima desse novo CPF, pois ao pesquisar um valor um pouco acima desse CPF, iremos abrir o novo arquivo txt porem não ira conter o arquivo procurado.
+ 
+ - :exclamation: Portanto,sempre que adicionamos um novo valor, abriremos o arquivo txt no qual ele tem a maior probabilidade de estar caso estivesse inserido, adicionamos esse CPF no seu novo arquivo txt e tranferimos todos os valores maiores do arquivo que abrimos para o novo arquivo. Depois disso, removemos todos os valores transferidos do arquivo lido, evitando duplicidade de dados.
+ 
+ > EXEMPLO:
+ 
+ <p> Partindo do dado pré setado da função, de acordo com seu CPF  respeitando a ordem crescente do arquivo, ele estaria entre os CPFS 12429608473 e 12531656899:
+  
+  ![antes](https://user-images.githubusercontent.com/78819692/148844449-f01180ac-e9ee-4708-9d4b-99606667969d.png)
+
+  
+  <p> Portanto, para respeitar a ordem crescente dos arquivos, no qual ajuda a achar esse CPF dentro deles, criamos um arquivo com esse novo CPF e organizamos os dados entre os dois arquivos:<p>
+   
+ ![depois](https://user-images.githubusercontent.com/78819692/148844864-af18e319-58f8-4148-9f7a-24d577b7f1f0.png)
+
+ 
