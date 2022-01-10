@@ -28,3 +28,11 @@
 ![menu](https://user-images.githubusercontent.com/78819692/148828871-2aa827c4-250d-4eba-87da-10f5624fee1e.png)
 
 :point_right: Opção 1:
+
+<p> A opção Pesquisar CPF ja vem com os seguintes valores pré-setados a serem procurados 
+ 
+```sh
+ 27159570809,Jessé	26 
+ 18848853902,Caetano	27 
+ 25352811829,Dominic	38
+```
