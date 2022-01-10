@@ -25,6 +25,13 @@ Aplicação: A aplicação de vocês deve ser capaz de mapear esses arquivos com
 
 <h1></h1>
 
+##DataBase
+
+- Os dados trabalhados durante o programa estao incluso de forma crescente (CPF) no arquivo database.txt. Logo após o inicio do programa, esses dados são divididos em 100 arquivos com 10 dados cada.
+- Todo arquivo tem como seu nome o primeiro CPF registrado nele, no qual esse valor servirá de análise e sentinela para podermos identificar o range dos CPFS neles armazenados.
+
+
+<h1></h1>
 ### Menu 
 
 ![menu](https://user-images.githubusercontent.com/78819692/148828871-2aa827c4-250d-4eba-87da-10f5624fee1e.png)
@@ -43,6 +50,8 @@ Como temos essas 3 entradas cadastradas em nosso arquivo, teremos como saída o 
  ![saida 1](https://user-images.githubusercontent.com/78819692/148832592-4d3013ff-e6da-4dcf-b26d-88132732fc29.png)
 
 > :exclamation: Caso for do interesse pesquisar outros valores de CPF, basta modificar o vetor que contem esses valores.
+ 
+ <h1></h1>
  
 :point_right: Opção 2:
  
@@ -108,6 +117,8 @@ Como temos essas 3 entradas cadastradas em nosso arquivo, teremos como saída o 
   }
   }
 ```
+   
+<h1></h1>
    
 :point_right: Opção 3:
    
