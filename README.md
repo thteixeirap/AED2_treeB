@@ -50,7 +50,7 @@ Como temos essas 3 entradas cadastradas em nosso arquivo, teremos como saída o 
 
   <p> Logo após a remoção desses 3 dados, podemos confirmar a remoção tanto verificando através do código, quanto atraves da visualização abrindo manualmente os arquivos no quais estavam esses dados<p>
  
- > Chamada da função Pesquisar logo apos a remoção dos dados: 
+ > Saída do código após a chamada da função Pesquisar logo apos a remoção dos dados: 
    
  ![remoçaõ2](https://user-images.githubusercontent.com/78819692/148832275-48e7cf63-5e33-4150-86b6-65213a458712.png)
 
