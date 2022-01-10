@@ -58,8 +58,9 @@ Como temos essas 3 entradas cadastradas em nosso arquivo, teremos como saída o 
  - Para o processo de remoção, utilizamos um arquivo .txt como auxiliar, no qual transcrevemos todos os dados do arquivo onde encontra o CPF a ser removido para o arquivo auxiliar sem esse CPF.  Após o While de leitura desse arquivo, excluiremos esse antigo artigo e adicionamos o novo reescrito, removendo da árvore o valor sentinela(nome do arquivo) desse antigo artigo, e adicionamos novamente o novo valor sentinela (nome do novo arquivo) na árvore.
 
 - Tal recurso de remover e adicionar na árvore novamente foi para caso o CPF a ser removido fosse o valor sentinela(nome do arquivo). Caso não for o valor sentinela, excluiremos e adicionaremos novamente o mesmo valor.
+  
+> :exclamation: Parte do trecho do While mais detalhado:  
    
-> PArte do trecho do While mais detalhado:  
 ```sh
    
    while(!feof(fp)){  
