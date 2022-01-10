@@ -1,7 +1,7 @@
 <h1 align="center"> 
  Tree B
 </h1>
-<h4 align="center">	
+<h4>	
   Conforme observamos em sala de aula, uma das funções da estrutura em árvore B é prover capacidade de manipulação de inúmeros arquivos, muitas vezes grandes, sob uma hierarquia de sub-conjuntos de entradas menores, cada qual representado por um nó da estrutura. Sua função é simular um banco de dados. Nesse, teremos apenas uma única tabela, composta por nome, idade, cpf que chamaremos de clientes. Nossa tabela deve ter dados aleatórios, o quais podem vir de um banco qualquer da internet ou produzido por vocês a partir de um processo randômico. Teremos nesta tabela 1.000 entradas e cada página da árvore B (i.e., arquivo separado dessa tabela)  sendo representada por 10 dessas entradas de forma ordenada. 
 
 Aplicação: A aplicação de vocês deve ser capaz de mapear esses arquivos com 10 entradas sob o conceito que trabalhamos em sala. Para tanto, considere que cada arquivo seja mapeado por um código que consiga identificar o range de cpfs que estão salvos nele. Nossa árvore tem fator de crescimento m = 2, logo, cada página guardará de 1 a 3 códigos desses. Sua função é prover um menu que consiga: Inserir, Remover e Pesquisar pessoas nesse grupo de arquivos, mantendo sempre a integridade da estrutura e tamanho máximo do arquivo. 
