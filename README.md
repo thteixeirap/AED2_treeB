@@ -50,11 +50,46 @@ Como temos essas 3 entradas cadastradas em nosso arquivo, teremos como saída o 
 
   <p> Logo após a remoção desses 3 dados, podemos confirmar a remoção tanto verificando através do código, quanto atraves da visualização abrindo manualmente os arquivos no quais estavam esses dados<p>
  
- > Saída do código após a chamada da função Pesquisar logo apos a remoção dos dados: 
+ - Saída do código após a chamada da função Pesquisar logo apos a remoção dos dados: 
    
  ![remoçaõ2](https://user-images.githubusercontent.com/78819692/148832275-48e7cf63-5e33-4150-86b6-65213a458712.png)
 
- 
- 
- 
- 
+```sh
+   
+    while(!feof(fp)){  
+    
+    result = fgets(linha,80,fp);
+    strcpy(aux,linha);  
+    pt = strtok(result,"    ,");
+
+    if(cont == 10)
+      break;
+    
+    if(cont == 0 && atof(pt) != r.key){
+      strcpy(pathAux,"./");
+      strcat(pathAux,pt);
+      strcat(pathAux,".txt");
+      new = atof(pt);
+      fc = fopen(pathAux,"w");
+      fprintf(fc,"%s",aux);
+    }
+  
+    else if(cont == 0 && atof(pt) == r.key){
+      result = fgets(linha,80,fp);
+      strcpy(aux,linha);  
+      pt = strtok(result,"    ,");
+      cont++;
+      strcpy(pathAux,"./");
+      strcat(pathAux,pt);
+      strcat(pathAux,".txt");
+      new = atof(pt);  
+      fc = fopen(pathAux,"w");
+      fprintf(fc,"%s",aux);
+   
+    }else if(atof(pt) != r.key && cont != 0){  
+      fprintf(fc,"%s",aux);
+    }
+    cont++;
+    pt = strtok(NULL, " ");
+  }
+```
