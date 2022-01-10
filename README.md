@@ -29,10 +29,17 @@
 
 :point_right: Opção 1:
 
-<p> A opção Pesquisar CPF ja vem com os seguintes valores pré-setados a serem procurados 
+<p> A opção Pesquisar CPF ja vem com os seguintes valores pré-setados a serem procurados a partir do CPF:
  
 ```sh
  27159570809,Jessé	26 
  18848853902,Caetano	27 
  25352811829,Dominic	38
 ```
+Como temos essas 3 entradas cadastradas em nosso arquivo, teremos como saída o retorno desses dados com o CPF, nome e idade: 
+ 
+![1](https://user-images.githubusercontent.com/78819692/148830027-5b6faf0f-1ebd-46b8-b0ca-189d82577ff6.png)
+ 
+ 
+
+ 
