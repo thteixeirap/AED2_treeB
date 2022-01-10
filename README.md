@@ -29,7 +29,7 @@
 
 :point_right: Opção 1:
 
-<p> A opção Pesquisar CPF ja vem com os seguintes valores pré-setados a serem procurados a partir do CPF:
+<p> A opção Pesquisar CPF ja vem com os seguintes valores pré-setados a serem procurados a partir do CPF:<p>
  
 ```sh
  27159570809,Jessé	26 
@@ -42,5 +42,18 @@ Como temos essas 3 entradas cadastradas em nosso arquivo, teremos como saída o 
  
 > :exclamation: Caso for do interesse pesquisar outros valores de CPF, basta modificar o vetor que contem esses valores.
  
+:point_right: Opção 2:
+ 
+ <p> A opção Remover CPF já vem pre-setadas com os mesmos 3 valores da função Pesquisar. A função RemoveCPF inicia pesquisando se o CPF a ser removido se encontra em algum arquivo de algum registro da árvore, caso encontrando inicia-se o processo de remoção, caso esse CPF não esteja cadastrado nos arquivos, a função retorna. A saída da funçaõ, sabendo que os 3 dados se encontra nos registros, ficaria dessa forma: <p>
+ 
+ ![remove](https://user-images.githubusercontent.com/78819692/148831743-6be8704b-6403-4f98-8757-6d60fa950c4a.png)
 
+  <p> Logo após a remoção desses 3 dados, podemos confirmar a remoção tanto verificando através do código, quanto atraves da visualização abrindo manualmente os arquivos no quais estavam esses dados<p>
+ 
+ > Chamada da função Pesquisar logo apos a remoção dos dados: 
+ ![remoçaõ2](https://user-images.githubusercontent.com/78819692/148832275-48e7cf63-5e33-4150-86b6-65213a458712.png)
+
+ 
+ 
+ 
  
