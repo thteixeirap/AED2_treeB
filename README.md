@@ -56,16 +56,19 @@ Como temos essas 3 entradas cadastradas em nosso arquivo, teremos como saída o 
 
 ```sh
    
-    while(!feof(fp)){  
-    
+   while(!feof(fp)){  
+  
     result = fgets(linha,80,fp);
     strcpy(aux,linha);  
     pt = strtok(result,"    ,");
-
+  
     if(cont == 10)
       break;
-    
-    if(cont == 0 && atof(pt) != r.key){
+   
+   /* O PRIMEIRO CPF (QUE É O NOME DO ARQUIVO), CASO NAO FOR CPF PARA REMOÇÃO, SERÁ O NOME DO NOVO ARQUIVO, 
+        NO QUE VAI CRIAR E DEPOIS ABRIR E ESCREVER A PRIMEIRA LINHA.*/
+   
+   if(cont == 0 && atof(pt) != r.key){
       strcpy(pathAux,"./");
       strcat(pathAux,pt);
       strcat(pathAux,".txt");
@@ -73,8 +76,11 @@ Como temos essas 3 entradas cadastradas em nosso arquivo, teremos como saída o 
       fc = fopen(pathAux,"w");
       fprintf(fc,"%s",aux);
     }
-  
-    else if(cont == 0 && atof(pt) == r.key){
+    /*
+        CASO O PRIMEIRO CPF(QUE É O NOME DO ARQUIVO), FOR O CPF PARA A REMOÇÃO, JA CHAMAMOS A SEGUNDA LINHA DO ARQUIVO,
+        TOKENIZAMOS E CRIAMOS UM ARQUIVO COM ESSE CPF E ABRIMOS E ESCREVEMOS.
+    */
+    else if(cont == 0 && atof(pt) == r.key){ 
       result = fgets(linha,80,fp);
       strcpy(aux,linha);  
       pt = strtok(result,"    ,");
@@ -82,14 +88,14 @@ Como temos essas 3 entradas cadastradas em nosso arquivo, teremos como saída o 
       strcpy(pathAux,"./");
       strcat(pathAux,pt);
       strcat(pathAux,".txt");
-      new = atof(pt);  
+      new = atof(pt);
       fc = fopen(pathAux,"w");
       fprintf(fc,"%s",aux);
-   
     }else if(atof(pt) != r.key && cont != 0){  
       fprintf(fc,"%s",aux);
     }
     cont++;
     pt = strtok(NULL, " ");
+  }
   }
 ```
