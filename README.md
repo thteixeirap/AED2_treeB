@@ -27,8 +27,9 @@ Aplicação: A aplicação de vocês deve ser capaz de mapear esses arquivos com
 
 #### DataBase
 
-- Os dados trabalhados durante o programa estao incluso de forma crescente (CPF) no arquivo database.txt. Logo após o inicio do programa, esses dados são divididos em 100 arquivos com 10 dados cada.
-- Todo arquivo tem como seu nome o primeiro CPF registrado nele, no qual esse valor servirá de análise e sentinela para podermos identificar o range dos CPFS neles armazenados.
+- Os dados trabalhados durante o programa estao incluso de forma crescente (CPF) no arquivo database.txt. 
+- Logo após o inicio do programa, esses dados são divididos em 100 arquivos com 10 dados cada.
+- Todo arquivo tem como seu nome o primeiro CPF registrado nele, no qual esse valor servirá de análise e sentinela para podermos identificar o range dos CPFS neles armazenados. Esses CPFS são os que serão adicionados na árvore B.
 
 
 <h1></h1>
