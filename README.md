@@ -133,4 +133,8 @@ Como temos essas 3 entradas cadastradas em nosso arquivo, teremos como saída o 
    
  ![depois](https://user-images.githubusercontent.com/78819692/148844864-af18e319-58f8-4148-9f7a-24d577b7f1f0.png)
 
- 
+  . A Saída do código após o comando Inserir CPF:
+   
+ ![op3](https://user-images.githubusercontent.com/78819692/148845044-8ea73e37-f7ce-4a9f-912d-782526ff0976.png)
+
+   <p> Primeiro verificamos se o CPF a ser inserido realmente não se encontra nos registros, caso realmente não esteja iniciamos a inserção e após sua confirmação realizamos novamente a Pesquisa desse CPF<p>
