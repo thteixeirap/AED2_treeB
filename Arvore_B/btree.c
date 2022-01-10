@@ -491,7 +491,6 @@ void RemoveCPF(Pagina *btree,Record r){
         CASO O PRIMEIRO CPF(QUE É O NOME DO ARQUIVO), FOR O CPF PARA A REMOÇÃO, JA CHAMAMOS A SEGUNDA LINHA DO ARQUIVO,
         TOKENIZAMOS E CRIAMOS UM ARQUIVO COM ESSE CPF E ABRIMOS E ESCREVEMOS.
     */
-    
     else if(cont == 0 && atof(pt) == r.key){
    
       result = fgets(linha,80,fp);
@@ -509,11 +508,8 @@ void RemoveCPF(Pagina *btree,Record r){
     }else if(atof(pt) != r.key && cont != 0){  
       fprintf(fc,"%s",aux);
     }
-    
     cont++;
     pt = strtok(NULL, " ");
-
-   
   }
 
   /*
@@ -598,7 +594,6 @@ void insereCPF(Pagina *btree,Record *r,char nome[20],int idade){
 
        O J É PARA QUE NA PRIMEIRA VEZ ENTRADO NO IF, ADICIONAR O CPF A SER INSERIDO;
     */
-    printf("Linha %d: %s\n",cont,aux);
     if( j==0){
       
       fprintf(fnew,"%lld",r->key);
@@ -657,5 +652,4 @@ void insereCPF(Pagina *btree,Record *r,char nome[20],int idade){
     }
   fclose(fnew);
   fclose(fp);
-  printf("SAiu\n");
 }
